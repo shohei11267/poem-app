@@ -6,7 +6,13 @@ import streamlit as st
 st.set_page_config(
     page_title="🌸 詩と言葉の鑑賞室", page_icon="🌸", layout="centered"
 )
+# Google Search Console 所有権確認用コード
+import streamlit.components.v1 as components
 
+components.html(
+    '<meta name="google-site-verification" content="cBv9LGWMRsA3IAfBFLqU4XCX4yOmuC8NRJrpzLEngcs" />',
+    height=0,
+)
 # 2. タイトルと説明の表示
 st.title("🌸 詩と言葉の鑑賞室")
 st.caption(
