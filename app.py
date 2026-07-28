@@ -81,7 +81,7 @@ if st.button("✨ 鑑賞・返歌を受け取る", type="primary"):
         with st.spinner("言葉の余韻を味わっています..."):
             try:
                 genai.configure(api_key=api_key)
-                model = genai.GenerativeModel("gemini-1.5-flash")
+                model = genai.GenerativeModel("gemini-flash-latest")
 
                 prompt = f"{SYSTEM_PROMPT}\n\n【評価対象のポエム】\n{poem_text}"
                 response = model.generate_content(prompt)
